@@ -194,6 +194,84 @@
   </ul>
 </section>
 
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>Git has integrity</h5>
+  </header>
+  <ul class="incremental">
+    <li>Everything is check sommed before it is stored</li>
+    <li>Impossible to change the content of any file or directory withot git knowing about it</li>
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>3 states</h5>
+  </header>
+  <img src="images/vcs-3-states.png"></section>
+</section>
+
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>3 states - Repository</h5>
+  </header>
+  <ul class="incremental">
+    <li>Git stores the metadata and object database for the project</li>
+    <li>Most important part of Git</li>
+    <li>It is what is copied when you clone a repository from another computer</li>
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>3 states - Working directory</h5>
+  </header>
+  <ul class="incremental">
+    <li>Single checkout of one version of the project</li>
+    <li>These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify</li>
+    <li>It's the version you are using</li>
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>3 states - Staging area</h5>
+  </header>
+  <ul class="incremental">
+    <li>File contained in your git directory that stores information about what will go into your next commit</li>
+    <li>Can be named "Index"</li>
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>3 states - workflow</h5>
+  </header>
+  <ul class="incremental">
+    <li>You modify files in your working directory</li>
+    <li>You stage the files, adding snapshots of them to your staging area</li>
+    <li>You do a commit which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory</li>
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>3 states - files status</h5>
+  </header>
+  <ul class="incremental">
+    <li>If a particular version of a file is in the Git directory, it’s considered committed</li>
+    <li>If it’s modified but has been added to the staging area, it is staged</li>
+    <li>if it was changed since it was checked out but has not been staged, it is modified</li>
+  </ul>
+</section>
+
 
 <style>
   html, .view body { background-color: black; counter-reset: slideidx; , font-family: arial}
