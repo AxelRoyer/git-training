@@ -263,15 +263,22 @@
 <section>
   <header>
     <h4>How does it work behind the scene ?</h4>
-    <h5>3 states - files status</h5>
+    <h5>Files status</h5>
   </header>
-  <ul class="incremental">
-    <li>If a particular version of a file is in the Git directory, it’s considered committed</li>
-    <li>If it’s modified but has been added to the staging area, it is staged</li>
-    <li>if it was changed since it was checked out but has not been staged, it is modified</li>
-  </ul>
+  <img src="images/vcs-files-status.png"></section>
 </section>
 
+<section>
+  <header>
+    <h4>How does it work behind the scene ?</h4>
+    <h5>Ignoring files</h5>
+  </header>
+  <ul class="incremental">
+    <li>Create .gitignore (file in the root of your repository)</li>
+    <li>Add the path of the file / directory you would like to ignore</li>
+    <li>You will not have the file listed in "untracked files"</li>
+  </ul>
+</section>
 
 <style>
   html, .view body { background-color: black; counter-reset: slideidx; , font-family: arial}
